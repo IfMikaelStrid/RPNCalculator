@@ -1,46 +1,45 @@
 package com.mickestrid.RPNCalc;
 
-			/*********************************************************************
-			 ********************************************************************* 
-			 **  					@author IfMiaelStrid					   	**
-			 **																   	**
-			 ** This is the RPN calculator version 1.0. In this version 	   	**
-			 ** there's a bit things to be done:							    **		
-			 **																	**
-			 **		*TODO negative values is yet to be implemented. 			**
-			 **		 only takes positive integers	 							**
-			 **																	**
-			 **		*TODO Future implementation of more mathematic operators.	**
-			 **																	**
-			 **		*TODO Some optimization										**
-			 **																	**		
-			 *********************************************************************
-			 *********************************************************************/
+		/*************************************************************************
+		 ************************************************************************* 
+		 **  			@author IfMiaelStrid 	 		   	**
+		 **									**
+		 **      This is the RPN calculator version 1.0. In this version   	**
+		 **	 there's a bit things to be done:				**		
+		 **									**
+		 **	*TODO negative values is yet to be implemented. 		**
+		 **	 only takes positive integers	 				**
+		 **									**
+		 **	*TODO Future implementation of more mathematic operators.	**
+		 **									**
+		 **	*TODO Some optimization						**
+		 **									**		
+		 *************************************************************************
+		 *************************************************************************/
 
 
 /*****************************************************************************************************
  *****************************************************************************************************
- ** This program uses the following algorithm from wikipedia.										**
- ** It's pretty straight forward.																	**	
- ** 																								**
- ** While there are input tokens left																**
- ** Read the next token from input.																	**
- ** If the token is a value																			**
- ** Push it onto the stack.																			**
- ** Otherwise, the token is an operator (operator here includes both operators and functions).	 	**
- ** It is already known that the operator takes n arguments.										**
- ** If there are fewer than n values on the stack													**
- ** (Error) The user has not input sufficient values in the expression.								**	
- ** Else, Pop the top n values from the stack.														**					
- ** Evaluate the operator, with the values as arguments.											**
- ** Push the returned results, if any, back onto the stack.											**
- ** If there is only one value in the stack															**
- ** That value is the result of the calculation.													**
- ** Otherwise, there are more values in the stack													**
- ** (Error) The user input has too many values.														**
+ ** This program uses the following algorithm from wikipedia.					    **
+ ** It's pretty straight forward.								    **	
+ ** 												    **
+ ** While there are input tokens left								    **
+ ** Read the next token from input.								    **
+ ** If the token is a value									    **
+ ** Push it onto the stack.									    **
+ ** Otherwise, the token is an operator (operator here includes both operators and functions).	    **
+ ** It is already known that the operator takes n arguments.					    **
+ ** If there are fewer than n values on the stack						    **
+ ** (Error) The user has not input sufficient values in the expression.				    **	
+ ** Else, Pop the top n values from the stack.							    **				
+ ** Evaluate the operator, with the values as arguments.					    **
+ ** Push the returned results, if any, back onto the stack.					    **
+ ** If there is only one value in the stack							    **
+ ** That value is the result of the calculation.						    **
+ ** Otherwise, there are more values in the stack						    **
+ ** (Error) The user input has too many values.							    **
  *****************************************************************************************************
- *****************************************************************************************************
-*/
+ *****************************************************************************************************/
 
 import java.util.Stack;
 
