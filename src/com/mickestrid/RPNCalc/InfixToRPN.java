@@ -9,18 +9,18 @@ import java.util.Stack;
 
 		/*********************************************************************
 		 ********************************************************************* 
-		 **  					@author IfMiaelStrid					   	**
-		 **																   	**
-		 ** This is the RPN calculator version 1.0. In this version 	   	**
-		 ** there's a bit things to be done:							    **		
-		 **																	**
-		 **		*TODO negative values is yet to be implemented. 			**
-		 **		 only takes positive integers	 							**
-		 **																	**
-		 **		*TODO Future implementation of more mathematic operators.	**
-		 **																	**
-		 **		*TODO Some optimization										**
-		 **																	**		
+		 ** @author IfMiaelStrid					    **
+		 **								    **
+		 ** This is the RPN calculator version 1.0. In this version 	    **
+		 ** there's a bit things to be done:				    **		
+		 **								    **
+		 **	*TODO negative values is yet to be implemented. 	    **
+		 **	 only takes positive integers	 		    	    **
+		 **								    **
+		 **	*TODO Future implementation of more mathematic operators.   **
+		 **								    **
+		 **		*TODO Some optimization				    **
+		 **								    **		
 		 *********************************************************************
 		 *********************************************************************/
 
